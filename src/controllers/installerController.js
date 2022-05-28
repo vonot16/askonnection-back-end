@@ -13,4 +13,13 @@ router.get('/', async (req, res)=>{
     }
 })
 
+router.get('/:id', async (req, res)=>{
+    try{
+        const installer = await Installer.findById(req.params.id)
+        return res.send(installer)
+    }catch(err){
+        return res.sendStatus(404)
+    }
+})
+
 module.exports = app => app.use('/installer',router)

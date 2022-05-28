@@ -13,7 +13,8 @@ const adressSchema = new mongoose.Schema({
 
 const installReqSchema = new mongoose.Schema({
     installer:String,
-    plan:String
+    plan:String,
+    solved:Boolean,
 })
 
 const auxSchemas = {adressSchema, installReqSchema}

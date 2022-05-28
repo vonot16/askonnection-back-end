@@ -1,18 +1,19 @@
 # Operações a fazer
 
 ## Auth
-[ ] Verificar se o email já está cadastrado
+[x] Verificar se o email já está cadastrado
 
 ## User
 [ ] Cadastrar um usuario
-[ ] Listar informações de um Unico Usuario
-[ ] Listar usuarios que desejam Instalar
+[x] Listar informações de um Unico Usuario
+[x] Listar usuarios que desejam Instalar
+[x] Listar Instalações de um usuario
 [ ] Adicionar desejo de Instalar
 
 ## Installer
 [ ] Cadastrar um instalador
-[ ] Listar Todos os Instaladores
-[ ] Listar Informações de um Unico Instalador
+[x] Listar Todos os Instaladores
+[x] Listar Informações de um Unico Instalador
 [ ] Adicionar um plano para o Instalador
 [ ] Listar todas os planos de um Instalador
 
