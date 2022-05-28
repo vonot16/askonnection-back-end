@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
     phone:String,
     adress:adressSchema,
     installReq:[installReqSchema],
+    photo:String
 })
 
 const User = mongoose.model('User',userSchema)

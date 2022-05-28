@@ -9,13 +9,15 @@
 [x] Listar usuarios que desejam Instalar
 [x] Listar Instalações de um usuario
 [ ] Adicionar desejo de Instalar
+[ ] Modificar desejo de Instalar
 
 ## Installer
-[ ] Cadastrar um instalador
+[x] Cadastrar um instalador
 [x] Listar Todos os Instaladores
+[x] Listar informações de um Unico Instalador
 [x] Listar Informações de um Unico Instalador
-[ ] Adicionar um plano para o Instalador
-[ ] Listar todas os planos de um Instalador
+[x] Listar todas os planos de um Instalador
+[x] Adicionar um plano para o Instalador
 
 ## Plans
 [ ] Listar Todos os Planos

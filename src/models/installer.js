@@ -7,7 +7,8 @@ const installerSchema = new mongoose.Schema({
     email:String,
     phone:String,
     avaliblePlans:[String],
-    adress:adressSchema
+    adress:adressSchema,
+    photo:String
 })
 
 const Installer = mongoose.model('Installer',installerSchema)

@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
         const user = await User.find()
         return res.send(user)
     } catch (err) {
-
+        return res.sendStatus(500)
     }
 })
 
