@@ -5,7 +5,7 @@ const router = express.Router();
 const User = require('../models/user')
 const Installer = require('../models/installer')
 
-router.post('/verifyEmail', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         let RecivedEmail = req.body.email
         let u = await User.findOne({ email: RecivedEmail })

@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     }
 })
 
-router.get('/wantInstall', async(req, res)=>{
+router.get('/installQueue', async(req, res)=>{
     try{
         let user = await User.find({installReq:{$exists:true}})
         user.map((u, i) =>{
@@ -27,7 +27,7 @@ router.get('/wantInstall', async(req, res)=>{
     }
 })
 
-router.get('/installask/:id', async(req, res)=>{
+router.get('/installIntend/:id', async(req, res)=>{
     try{
         const user = await User.findById(req.params.id)
         return res.send(user.installReq)
@@ -45,7 +45,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.post('/addinstallask', async(req, res) =>{
+router.post('/addInstallIntend', async(req, res) =>{
     const data = {
         plan: req.body.plan,
         solved: false,
@@ -60,7 +60,7 @@ router.post('/addinstallask', async(req, res) =>{
     }
 })
 
-router.post('/modifyinstallask', async(req, res) =>{
+router.post('/changeInstallIntend', async(req, res) =>{
     const data = {
         id: req.body.id,
         installer: req.body.installer,
@@ -77,7 +77,7 @@ router.post('/modifyinstallask', async(req, res) =>{
     }
 })
 
-router.post('/new/', async(req, res)=>{
+router.post('/newUser', async(req, res)=>{
     try{
         const user = await User.create(
             {

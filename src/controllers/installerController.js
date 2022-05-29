@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.post('/addplan', async (req, res) => {
+router.post('/addPlan', async (req, res) => {
     try {
         const id = req.body.id
         const plan = req.body.plan
@@ -34,7 +34,7 @@ router.post('/addplan', async (req, res) => {
     }
 })
 
-router.get('/plansask/:id', async (req, res) => {
+router.get('/getPlansInstallers/:id', async (req, res) => {
     try {
         const installer = await Installer.findById(req.params.id)
         return res.send(installer.avaliblePlans)
@@ -43,7 +43,7 @@ router.get('/plansask/:id', async (req, res) => {
     }
 })
 
-router.post('/new/', async (req, res) => {
+router.post('/newInstaller', async (req, res) => {
     try {
         const installer = await Installer.create(
             {

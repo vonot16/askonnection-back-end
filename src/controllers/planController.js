@@ -22,7 +22,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.post('/new/', async (req, res) => {
+router.post('/newPlan', async (req, res) => {
     try {
         const p = req.body
         const plan = Plan.create(
