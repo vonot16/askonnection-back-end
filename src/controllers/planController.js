@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
     try {
-        const plan = await Plan.find()
+        const plan = await Plan.find({},{_id:1})
         return res.send(plan)
     } catch (err) {
         return res.sendStatus(500)

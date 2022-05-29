@@ -23,10 +23,10 @@ router.post('/', async (req, res) => {
                 _id: i._id
             })
         } else {
-            res.send(404)
+            res.send()
         }
     } catch (err) {
-        console.log(err)
+        res.send(500)
         
     }
 })
