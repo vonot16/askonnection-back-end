@@ -4,12 +4,12 @@
 [x] Verificar se o email já está cadastrado
 
 ## User
-[ ] Cadastrar um usuario
+[x] Cadastrar um usuario
 [x] Listar informações de um Unico Usuario
 [x] Listar usuarios que desejam Instalar
 [x] Listar Instalações de um usuario
-[ ] Adicionar desejo de Instalar
-[ ] Modificar desejo de Instalar
+[x] Adicionar desejo de Instalar
+[x] Modificar desejo de Instalar
 
 ## Installer
 [x] Cadastrar um instalador
